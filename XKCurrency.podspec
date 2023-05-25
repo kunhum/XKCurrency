@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKCurrency'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XKCurrency.'
+  s.version          = '0.0.2'
+  s.summary          = '汇率'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,21 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/xk/XKCurrency'
+  s.homepage         = 'https://github.com/kunhum/XKCurrency'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xk' => 'weikun.xie@get88.cn' }
-  s.source           = { :git => 'https://github.com/xk/XKCurrency.git', :tag => s.version.to_s }
+  s.author           = { 'kenneth' => 'kunhum@163.com' }
+  s.source           = { :git => 'https://github.com/kunhum/XKCurrency.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'XKCurrency/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'XKCurrency' => ['XKCurrency/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  s.dependency 'SnapKit'
+  s.dependency 'SwifterSwift'
+  s.dependency 'XKNetwork'
+  
 end
