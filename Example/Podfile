@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'XKCurrency_Example' do
+  pod 'XKCurrency', :path => '../'
+
+  target 'XKCurrency_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
