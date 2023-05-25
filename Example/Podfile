@@ -1,6 +1,6 @@
 platform :ios, '13.0'
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/kunhum/XKToolSetRepo.git'
+source 'git@github.com:kunhum/XKToolSetRepo.git'
 use_modular_headers!
 
 target 'XKCurrency_Example' do
