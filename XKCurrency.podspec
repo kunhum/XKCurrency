@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKCurrency'
-  s.version          = '0.0.2.2'
+  s.version          = '0.0.2.3'
   s.summary          = '汇率'
 
 # This description is used to generate tags and improve search results.
@@ -33,9 +33,9 @@ TODO: Add long description of the pod here.
   s.source_files = 'XKCurrency/Classes/**/*'
 
   s.dependency 'RxSwift'
-#  s.dependency 'RxCocoa'
-#  s.dependency 'SnapKit'
-#  s.dependency 'SwifterSwift'
+  s.dependency 'RxCocoa'
+  s.dependency 'SnapKit'
+  s.dependency 'SwifterSwift'
 #  s.dependency 'XKNetwork'
   
 end
